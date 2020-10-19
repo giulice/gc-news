@@ -1,0 +1,14 @@
+.footer{
+background-color:  rgb(38, 48, 54);
+display: flex;
+justify-content: center;
+border-top: rgb(3, 188, 235) 2px solid;
+color: whitesmoke;
+}   
+.copy{
+width: 300px;
+padding: 20px;
+}
+a{
+text-decoration: none;
+}
