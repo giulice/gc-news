@@ -1,4 +1,4 @@
-# My Newpaper: GCNews
+# My Newspaper: GCNews
 
 **Version 1.0.0**
 
