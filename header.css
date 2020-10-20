@@ -1,53 +1,62 @@
-.header{
-display: flex;
-flex-wrap: wrap;
-flex-flow: row nowrap;
-height: 50px;
-align-items: center;
-background-color:  rgb(38, 48, 54);
-border-bottom: rgb(3, 188, 235) 2px solid;
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;
+    height: 50px;
+    align-items: center;
+    background-color: rgb(38, 48, 54);
+    border-bottom: rgb(3, 188, 235) 2px solid;
 }
-.name{
-flex: 1 1 auto;
-font-size: 50px;
+
+.name {
+    flex: 1 1 auto;
+    font-size: 50px;
 }
-.name a{
-color: rgb(3, 188, 235);
+
+.name a {
+    color: rgb(3, 188, 235);
 }
-#news{
-color: whitesmoke;
+
+#news {
+    color: whitesmoke;
 }
-.nav-list{
-flex: 5 1 auto;
+
+.nav-list {
+    flex: 5 1 auto;
 }
-.nav-list ul{
-list-style: none;
-padding: 15px;
+
+.nav-list ul {
+    list-style: none;
+    padding: 15px;
 }
-.nav-list ul li{
-display: inline;
-padding: 0;
-margin: 0;
+
+.nav-list ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
 }
-.nav-list ul li a{
-color: whitesmoke;
-border-bottom: 3px;
-text-transform: uppercase;
-padding: 5px 10px;
-margin: 0 5px;
+
+.nav-list ul li a {
+    color: whitesmoke;
+    border-bottom: 3px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0 5px;
 }
-.nav-list ul li a:hover{
-border-bottom: rgb(3, 188, 235) 3px solid;
+
+.nav-list ul li a:hover {
+    border-bottom: rgb(3, 188, 235) 3px solid;
 }
-.nav-hamburger{
-display: none;
-flex: 0 1 auto;
-font-size: 50px;
+
+.nav-hamburger {
+    display: none;
+    flex: 0 1 auto;
+    font-size: 50px;
 }
-.nav-hamburger a{
-color: whitesmoke;
-padding: 0;
-margin: 0;
-border: 1px;
+
+.nav-hamburger a {
+    color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    border: 1px;
 }
-                
