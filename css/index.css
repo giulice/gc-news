@@ -225,4 +225,10 @@ body {
     .nav-list {
         display: none;
     }
+    .container-textprincipal h2{
+        font-size: 5px;
+    }
+    .container-textprincipal p{
+        font-size: 5px;
+    }
 }

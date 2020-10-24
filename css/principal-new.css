@@ -1,0 +1,32 @@
+.principal-new{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(images/principal.jpg);
+    background-position: top;    
+    background-size: cover;
+    height: 400px;
+    border-bottom: rgb(3, 188, 235) 2px solid;
+}
+
+.container-textprincipal{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.container-textprincipal h2{
+    font-size: 40px;
+}
+
+.container-textprincipal p{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.container-textprincipal h3{
+    text-align: right;
+}
+
+.principal-link .principal-new:hover{
+    border-bottom: yellow 2px solid;
+}
