@@ -1,0 +1,41 @@
+.sub-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    border:  rgb(3, 188, 235) 2px solid ;
+}
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right:  rgb(3, 188, 235) 1px solid ;
+}
+
+.col-2{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.attributes{
+    
+}
+
+.in-value{
+    margin: 10px;
+}
+
