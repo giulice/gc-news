@@ -73,7 +73,7 @@ body {
 }
 
 #article-1 {
-    background-image: url(images/1.png);
+    background-image: url(../images/1.png);
     background-position: center;
     background-size: cover;
     display: flex; /*Add these 3 lines*/
@@ -82,7 +82,7 @@ body {
 }
 
 #article-2 {
-    background-image: url(images/2.jpg);
+    background-image: url(../images/2.jpg);
     background-position: center;
     background-size: cover;
     display: flex; /*Add these 3 lines*/
@@ -91,7 +91,7 @@ body {
 }
 
 #article-3 {
-    background-image: url(images/3.jpg);
+    background-image: url(../images/3.jpg);
     background-position: center;
     background-size: cover;
     display: flex; /*Add these 3 lines*/
@@ -100,7 +100,7 @@ body {
 }
 
 #article-4 {
-    background-image: url(images/4.jpg);
+    background-image: url(../images/4.jpg);
     background-position: center;
     background-size: cover;
     display: flex; /*Add these 3 lines*/
@@ -109,7 +109,7 @@ body {
 }
 
 #article-5 {
-    background-image: url(images/5.jpg);
+    background-image: url(../images/5.jpg);
     background-position: center;
     background-size: cover;
     display: flex; /*Add these 3 lines*/
@@ -118,7 +118,7 @@ body {
 }
 
 #article-6 {
-    background-image: url(images/6.jpg);
+    background-image: url(../images/6.jpg);
     background-position: center;
     background-size: cover;
     display: flex; /*Add these 3 lines*/
@@ -127,7 +127,7 @@ body {
 }
 
 #article-7 {
-    background-image: url(images/7.jpg);
+    background-image: url(../images/7.jpg);
     background-position: center;
     background-size: cover;
     display: flex; /*Add these 3 lines*/
@@ -136,7 +136,7 @@ body {
 }
 
 #article-8 {
-    background-image: url(images/8.jpg);
+    background-image: url(../images/8.jpg);
     background-position: center;
     background-size: cover;
     display: flex; /*Add these 3 lines*/
