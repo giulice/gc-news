@@ -9,8 +9,9 @@
     align-items: center;
     flex-flow: row wrap;
     flex-direction: row;
-    width: 100%;
+    width: 60%;
     padding: 20px;
+    margin: 30px;
     border:  rgb(3, 188, 235) 2px solid ;
 }
 
@@ -32,10 +33,16 @@
 }
 
 .attributes{
-    
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    padding: 5px;
 }
 
-.in-value{
-    margin: 10px;
+.attributes h4{
+    color: whitesmoke;
+    padding-bottom: 2px;
+    font-size: 20px;
+    
 }
 
