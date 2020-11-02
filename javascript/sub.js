@@ -136,7 +136,7 @@ function cityBlur(e) {
 
 }
 
-/******** City ********/
+/******** Postal ********/
 function postalFocus() {
     var msg = document.getElementsByName("error-postal")[0];
     msg.classList.replace("error", "none");
@@ -153,12 +153,57 @@ function postalBlur(e) {
     }
 }
 
+/******** Postal ********/
+function dniFocus() {
+    var msg = document.getElementsByName("error-dni")[0];
+    msg.classList.replace("error", "none");
+}
+
+function dniBlur(e) {
+    var val = e.target.value;
+    var dniForm = /^\d{7,8}(?:[-\s]\d{4})?$/;
+    if (val.match(dniForm)) {
+
+    }else {
+        var msg = document.getElementsByName("error-dni")[0];
+        msg.classList.replace("none", "error");
+    }
+}
 
 
 /******** Button ********/
 function butclick(){
-    alert('entro al boton');
+    var error = document.getElementsByClassName('error');
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var pass = document.getElementById('pass').value;
+    var cpass = document.getElementById('cpass').value;
+    var age = document.getElementById('age').value;
+    var phone = document.getElementById('phone').value;
+    var adress = document.getElementById('adress').value;
+    var city = document.getElementById('city').value;
+    var postal = document.getElementById('postal').value;
+    var dni = document.getElementById('dni').value;
+    var flag = 0;
+    var arr = [name,email,pass,cpass,age,phone,adress,city,postal,dni];
+    for (var i=0;i<9;i++){
+        if (arr[i] == "") {
+            flag = 1
+        }
+    }
+    if (error.length == 0 && flag == 0) {
+        alert("Registry Successful!\n" + 
+                "Name: "+name +" - Phone: "+ phone + "\n" +"Email: "+ email +" - Adress: "+ adress + "\n" + 
+                "Password: " +pass +" - City: "+ city + "\n" +"Confirm Password: "+ cpass +" - Postal Code: "+ postal+ "\n" + 
+                "Age: " + age +" - DNI: "+ dni)
+        
+    }else {
+        for (var i=0;i<error.length;i++) {
+        alert(error[i].textContent);
+        }
+    }
 }
+
 
 window.onload = function() {
     var name = document.getElementById('name');
@@ -171,6 +216,7 @@ window.onload = function() {
     var adrr = document.getElementById('adress');
     var city = document.getElementById('city');
     var postal = document.getElementById('postal');
+    var dni = document.getElementById('dni');
 
     /******** Name ********/
     name.onfocus = nameFocus;
@@ -207,6 +253,10 @@ window.onload = function() {
     /******** Postal ********/
     postal.onfocus = postalFocus;
     postal.onblur = postalBlur;
+
+    /******** DNI ********/
+    dni.onfocus = dniFocus;
+    dni.onblur = dniBlur;
 
 
 

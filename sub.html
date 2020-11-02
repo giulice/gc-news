@@ -45,64 +45,67 @@
                     Hi
                 </h2>
             </div>
+            <form action="">
             <div class="container-button">
                 <div class="container">
                     <div class="col-1">
                         <div class="attributes">
                             <h4>Full Name</h4>
-                            <input type="text" id ="name">
+                            <input type="text" id ="name" required>
                             <p class="none" name = "error-name">Error name</p>
                         </div>
                         <div class="attributes">
                             <h4>Email</h4>
-                            <input type="email" id = "email">
+                            <input type="email" id = "email" required>
                             <p class="none" name = "error-email">Error Email</p>
                         </div>
                         <div class="attributes">
                             <h4>Password</h4>
-                            <input type="password" id="pass">
+                            <input type="password" id="pass" required>
                             <span class="none" name = "error-pass">The password must have an uppercase letter, a lowercase letter and a number</span>
                         </div>
                         <div class="attributes">
                             <h4>Confirm Password</h4>
-                            <input type="password" id = "cpass">
+                            <input type="password" id = "cpass" required>
                             <p class="none" name = "error-cpass">Password no coincide</p>
                         </div>
                         <div class="attributes">
                             <h4>Age</h4>
-                            <input type="number" id="age">
+                            <input type="number" id="age" required>
                             <p class="none" name = "error-age">menor de 18</p>
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="attributes">
                             <h4>Phone Number</h4>
-                            <input type="text" id="phone">
+                            <input type="text" id="phone" required>
                             <p class="none" name = "error-phone">error de telefono</p>
                         </div>
                         <div class="attributes">
                             <h4>Adress</h4>
-                            <input type="text" id="adress">
+                            <input type="text" id="adress" required>
                             <p class="none" name = "error-adress">error de direccion</p>
                         </div>
                         <div class="attributes">
                             <h4>City</h4>
-                            <input type="text" id="city">
+                            <input type="text" id="city" required>
                             <p class="none" name = "error-city">error de direccion</p>
                         </div>
                         <div class="attributes">
                             <h4>Postal Code</h4>
-                            <input type="text"  id="postal">
+                            <input type="text"  id="postal" required>
                             <p class="none" name = "error-postal">error postal</p>
                         </div>
                         <div class="attributes">
                             <h4>DNI</h4>
-                            <input type="text">
+                            <input type="number" id="dni" required>
+                            <p class="none" name = "error-dni">error postal</p>
                         </div>
                     </div>
                 </div>
-                <button id="button">SUBMIT</button>    
+                <button id="button" type="submit">SUBMIT</button>    
             </div>
+            </form>
         </section>
         <footer class="footer">
             <nav class="copy"><p> Giuliano Cetto, Copyright &copy; 2020. </p></nav>
