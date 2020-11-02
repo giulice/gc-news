@@ -101,7 +101,7 @@ function phoneBlur(e) {
     }
 }
 
-/******** Phone ********/
+/******** Adress ********/
 function adrrFocus() {
     var msg = document.getElementsByName("error-adress")[0];
     msg.classList.replace("error", "none");
@@ -116,6 +116,24 @@ function adrrBlur(e) {
         var msg = document.getElementsByName("error-adress")[0];
         msg.classList.replace("none", "error");
     }
+}
+
+/******** City ********/
+function cityFocus() {
+    var msg = document.getElementsByName("error-city")[0];
+    msg.classList.replace("error", "none");
+}
+
+function cityBlur(e) {
+    var val = e.target.value;
+    var cityForm = /^[a-zA-Z0-9]+$/;
+    if (val.length>=3 && val.match(cityForm)) {
+
+    }else {
+        var msg = document.getElementsByName("error-city")[0];
+        msg.classList.replace("none", "error");
+    }
+
 }
 
 
@@ -133,6 +151,8 @@ window.onload = function() {
     var age = document.getElementById('age');
     var phone = document.getElementById('phone');
     var adrr = document.getElementById('adress');
+    var city = document.getElementById('city');
+    var postal = document.getElementById('postal');
 
     /******** Name ********/
     name.onfocus = nameFocus;
@@ -161,6 +181,15 @@ window.onload = function() {
     /******** Adress ********/
     adrr.onfocus = adrrFocus;
     adrr.onblur = adrrBlur;
+
+    /******** City ********/
+    city.onfocus = cityFocus;
+    city.onblur = cityBlur;
+
+    /******** Postal ********/
+    postal.onfocus = postalFocus;
+    postal.onblur = postalBlur;
+
 
 
 
