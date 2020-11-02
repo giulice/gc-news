@@ -47,7 +47,7 @@ function passFocus() {
     msg.classList.replace("error", "none");
 }
 
-function passBlur(e){
+function passBlur(e) {
     var val = e.target.value;
     var passFor = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
     if (val.match(passFor)) {
@@ -59,12 +59,12 @@ function passBlur(e){
 }
 
 /******** Confirm-Password ********/
-function cpassFocus(){
+function cpassFocus() {
     var msg = document.getElementsByName("error-cpass")[0];
     msg.classList.replace("error", "none");
 }
 
-function cpassBlur(e){
+function cpassBlur(e) {
     var val = e.target.value;
     var pass = document.getElementById('pass');
     if(val != pass.value) {
@@ -79,7 +79,7 @@ function ageFocus() {
     msg.classList.replace("error", "none");
 }
 
-function ageBlur(e){
+function ageBlur(e) {
     var val = e.target.value;
     val = Number(val);
     if(Number.isInteger(val)) {
@@ -94,7 +94,6 @@ function ageBlur(e){
         msg.classList.replace("none", "error");
     }
 }
-
 
 /******** Phone ********/
 function phoneFocus() {
@@ -179,9 +178,8 @@ function dniBlur(e) {
     }
 }
 
-
 /******** Button ********/
-function butclick(){
+function butclick() {
     var error = document.getElementsByClassName('error');
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
@@ -212,7 +210,6 @@ function butclick(){
         }
     }
 }
-
 
 window.onload = function() {
     var name = document.getElementById('name');
@@ -267,10 +264,6 @@ window.onload = function() {
     /******** DNI ********/
     dni.onfocus = dniFocus;
     dni.onblur = dniBlur;
-
-
-
-
 
     but.onclick = butclick;  
 }
