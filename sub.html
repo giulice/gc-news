@@ -50,29 +50,35 @@
                     <div class="col-1">
                         <div class="attributes">
                             <h4>Full Name</h4>
-                            <input type="text">
+                            <input type="text" id ="name">
+                            <p class="none" name = "error-name">Error name</p>
                         </div>
                         <div class="attributes">
                             <h4>Email</h4>
-                            <input type="text">
+                            <input type="email" id = "email">
+                            <p class="none" name = "error-email">Error Email</p>
                         </div>
                         <div class="attributes">
                             <h4>Password</h4>
-                            <input type="text">
+                            <input type="password" id="pass">
+                            <span class="none" name = "error-pass">The password must have an uppercase letter, a lowercase letter and a number</span>
                         </div>
                         <div class="attributes">
                             <h4>Confirm Password</h4>
-                            <input type="text">
+                            <input type="password" id = "cpass">
+                            <p class="none" name = "error-cpass">Password no coincide</p>
                         </div>
                         <div class="attributes">
                             <h4>Age</h4>
-                            <input type="text">
+                            <input type="number" id="age">
+                            <p class="none" name = "error-age">menor de 18</p>
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="attributes">
                             <h4>Phone Number</h4>
-                            <input type="text">
+                            <input type="text" id="phone">
+                            <p class="none" name = "error-phone">error de telefono</p>
                         </div>
                         <div class="attributes">
                             <h4>Adress</h4>
@@ -92,12 +98,13 @@
                         </div>
                     </div>
                 </div>
-                <button>SUBMIT</button>    
+                <button id="button">SUBMIT</button>    
             </div>
         </section>
         <footer class="footer">
             <nav class="copy"><p> Giuliano Cetto, Copyright &copy; 2020. </p></nav>
         </footer>
     </div>
+    <script src="javascript/sub.js"></script>
 </body>
 </html>

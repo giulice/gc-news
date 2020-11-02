@@ -85,8 +85,14 @@
     font-size: 20px;
 }
 
+.none{
+    display: none;
+}
 
-
+.error{
+    display: flex;
+    color: red;
+}
 
 
 
