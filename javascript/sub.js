@@ -101,6 +101,22 @@ function phoneBlur(e) {
     }
 }
 
+/******** Phone ********/
+function adrrFocus() {
+    var msg = document.getElementsByName("error-adress")[0];
+    msg.classList.replace("error", "none");
+}
+
+function adrrBlur(e) {
+    var val = e.target.value;
+    var adrrForm = /^[a-zA-Z0-9]+(?:\s[a-zA-Z0-9]+)+$/; 
+    if(val.length>=5 && val.match(adrrForm)) {
+
+    }else {
+        var msg = document.getElementsByName("error-adress")[0];
+        msg.classList.replace("none", "error");
+    }
+}
 
 
 /******** Button ********/
@@ -116,6 +132,7 @@ window.onload = function() {
     var cpass = document.getElementById('cpass');
     var age = document.getElementById('age');
     var phone = document.getElementById('phone');
+    var adrr = document.getElementById('adress');
 
     /******** Name ********/
     name.onfocus = nameFocus;
@@ -140,6 +157,13 @@ window.onload = function() {
     /******** Phone ********/
     phone.onfocus = phoneFocus;
     phone.onblur = phoneBlur;
+
+    /******** Adress ********/
+    adrr.onfocus = adrrFocus;
+    adrr.onblur = adrrBlur;
+
+
+
 
     but.onclick = butclick;  
 }
