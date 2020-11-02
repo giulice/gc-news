@@ -232,4 +232,7 @@ body {
     .container-textprincipal p{
         font-size: 5px;
     }
+    .btn-sub {
+        display: none;
+    }
 }

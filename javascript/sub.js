@@ -15,6 +15,15 @@ function nameBlur(e) {
     }
 }   
 
+function nameKey(e) {
+    var val = e.target.value;
+    /*var tit = document.getElementById("tittle").textContent*/
+    /*tit.textContent= tit.textContent + val*/
+    
+    document.getElementById('name-press').innerHTML = val;
+
+}
+
 /******** Email ********/
 function mailFocus() {
     var msg = document.getElementsByName("error-email")[0];
@@ -221,6 +230,7 @@ window.onload = function() {
     /******** Name ********/
     name.onfocus = nameFocus;
     name.onblur = nameBlur;
+    name.onkeyup = nameKey;
 
     /******** Email ********/
     mail.onfocus = mailFocus;

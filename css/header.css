@@ -60,3 +60,17 @@
     margin: 0;
     border: 1px;
 }
+
+.btn-sub{
+    color: whitesmoke;
+    border:  rgb(3, 188, 235) 1px solid;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.btn-sub:hover {
+    background-color: rgb(3, 188, 235);
+    color: rgb(38, 48, 54);
+    border:rgb(38, 48, 54) 1px solid;
+}

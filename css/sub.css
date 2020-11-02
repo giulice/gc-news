@@ -6,6 +6,7 @@
 }
 
 .hello{
+    display: flex;
     align-self: center;
     width: 60%;
 }
