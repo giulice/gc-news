@@ -70,7 +70,7 @@ form{
     padding-left: 10px;
     padding-right: 10px;
     border-right:  rgb(3, 188, 235) 1px solid ;
-    /*width: 50%;*/
+    width: 50%;
 }
 
 .col-2{
@@ -79,7 +79,7 @@ form{
     flex: 1 1 auto;
     padding-left: 10px;
     padding-right: 10px;
-    /*width: 50%;*/
+    width: 50%;
 }
 
 .attributes{
@@ -104,15 +104,22 @@ form{
 .error{
     display: flex;
     color: red;
-    width: 100%;
 }
 
 
 
 
 @media(max-width: 1018px) {
+    .container{
+        flex-direction: column;
+    }
+
     .col-1{
         border-right: none;
+        width: 100%;
+    }
+    .col-2{
+        width: 100%;
     }
 }
 
