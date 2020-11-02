@@ -95,23 +95,10 @@ function phoneFocus() {
 
 function phoneBlur(e) {
     var val = e.target.value;
-    var phoneFor = /^[0-9.!#$%&'*+/=?^_`{|}~]{7,15}/;
-    /* var band = 0;
-    for(var i = 0;i<val.length;i++) {
-        if((val[i] == " ") || (val[i] == "(") || (val[i] == ")") || (val[i] == "-") || (val[i] == "_")){
-            band = 1;
-        }
-    }
-    if ((val.length<=6) || (band = 1)) {
-        console.log("error en telefono");
-    }*/
-    if (val.match(phoneFor) )/*&& val.length>=7) */{
-
-    }else {
+    if(val.length<7 || val.includes(" ") || val.includes("(") || val.includes(")") || val.includes("-") || val.includes("_")) {
         var msg = document.getElementsByName("error-phone")[0];
         msg.classList.replace("none", "error");
     }
-
 }
 
 
