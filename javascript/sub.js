@@ -136,6 +136,24 @@ function cityBlur(e) {
 
 }
 
+/******** City ********/
+function postalFocus() {
+    var msg = document.getElementsByName("error-postal")[0];
+    msg.classList.replace("error", "none");
+}
+
+function postalBlur(e) {
+    var val = e.target.value;
+    var postalForm = /^[a-zA-Z0-9]+$/;
+    if (val.length>=3 && val.match(postalForm)) {
+
+    }else {
+        var msg = document.getElementsByName("error-postal")[0];
+        msg.classList.replace("none", "error");
+    }
+}
+
+
 
 /******** Button ********/
 function butclick(){
